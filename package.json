@@ -1,0 +1,20 @@
+{
+  "name": "TypeFileDB",
+  "version": "1.0.0",
+  "description": "TypescriptによるファイルベースのDB風ライブラリ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kuromiy/TypeFileDB.git"
+  },
+  "keywords": [],
+  "author": "Kuromiya",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kuromiy/TypeFileDB/issues"
+  },
+  "homepage": "https://github.com/kuromiy/TypeFileDB#readme"
+}
