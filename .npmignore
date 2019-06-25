@@ -1,0 +1,11 @@
+coverage
+database
+docs
+example
+memo
+node_modules
+src
+test
+tsconfig.json
+tslint.json
+webpack.config.js

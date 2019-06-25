@@ -1,0 +1,12 @@
+{
+  "extends": "tslint:recommended",
+  "rules": {
+    "variable-name": false,
+    "curly": false,
+    "max-line-length": [true, 150],
+    "array-type": [
+      true,
+      "generic"
+    ]
+  }
+}
