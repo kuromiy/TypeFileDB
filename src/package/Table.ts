@@ -28,7 +28,7 @@ export class Table<T extends Object> {
     });
   }
 
-  public insert(newData: T): Promise<boolean> {
+  public insert(newData: T): Promise<T> {
     return new Promise(async (resolve, reject) => {
       const dataList: Array<any> = this._store.datas;
       const converter: Converter<T> = new Converter(this._conn);
@@ -52,7 +52,7 @@ export class Table<T extends Object> {
       const reconvertData = converter.reconvert(newData);
       dataList.push(reconvertData);
       await this._store.save();
-      resolve(true);
+      resolve(newData);
     });
   }
 

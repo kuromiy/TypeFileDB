@@ -7,11 +7,10 @@ const main = async () => {
   const conn: IFConnection = await db.connection(path.join(__dirname, "../database/dev"));
   const userTable: Table<User> = conn.table(User);
   const insertUser1: User = new User();
-  insertUser1._name = "test1";
-  const insertUser2: User = new User();
-  insertUser2._name = "test2";
-  await userTable.insert(insertUser1);
-  await userTable.insert(insertUser2);
+  insertUser1._name = "20190629Test";
+  const insertedUser: User = await userTable.insert(insertUser1);
+  // tslint:disable-next-line:no-console
+  console.log(`${insertedUser._id} - ${insertedUser._name}`);
   const userList: Array<User> = await userTable.find({});
   userList.forEach((user: User) => {
     // tslint:disable-next-line:no-console
